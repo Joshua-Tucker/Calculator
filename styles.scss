@@ -4,20 +4,23 @@
     box-sizing: border-box;
     background-color: black;
     color: white;
+    height: 100%;
 }
 
 
-body{
-    margin:5%;
+button{
+  border-radius: 100%;
+  font-size: 4rem;
+
 }
+
+
 .calculator {  
+    padding:5%;
     text-align: center;
-    height:100vh;
-    
-    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
     gap: 2rem 2rem;
     grid-auto-flow: row;
@@ -82,7 +85,8 @@ body{
     grid-area: DIVIDE; }
   
   .number__zero { 
-    grid-area: ZERO; }
+    grid-area: ZERO;
+    border-radius: none; }
   
   .number__decimal { 
     grid-area: DECIMAL; }
@@ -93,4 +97,10 @@ body{
 
   .operation{
     background-color: orange;
+  }
+  .symbol{
+    background-color: rgb(173, 172, 172);
+  }
+  .number{
+    background-color: rgb(77, 77, 77);
   }

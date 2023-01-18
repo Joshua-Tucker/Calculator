@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  height: 100%;
+}
+
+button {
+  border-radius: 100%;
+  font-size: 4rem;
+}
+
+.calculator {
+  padding: 5%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 2rem 2rem;
+  grid-auto-flow: row;
+  grid-template-areas: "DISPLAY DISPLAY DISPLAY DISPLAY" "C PLUSMINUS PERCENTAGE DIVIDE" "SEVEN EIGHT NINE TIMES" "FOUR FIVE SIX MINUS" "ONE TWO THREE PLUS" "ZERO ZERO DECIMAL EQUALS";
+}
+.calculator .display__container {
+  grid-area: DISPLAY;
+}
+.calculator .symbol__cancel {
+  grid-area: C;
+}
+.calculator .symbol__plmi {
+  grid-area: PLUSMINUS;
+}
+.calculator .symbol__percentage {
+  grid-area: PERCENTAGE;
+}
+.calculator .number__seven {
+  grid-area: SEVEN;
+}
+.calculator .number__eight {
+  grid-area: EIGHT;
+}
+.calculator .number__nine {
+  grid-area: NINE;
+}
+.calculator .operation__times {
+  grid-area: TIMES;
+}
+.calculator .number__four {
+  grid-area: FOUR;
+}
+.calculator .number__five {
+  grid-area: FIVE;
+}
+.calculator .number__six {
+  grid-area: SIX;
+}
+.calculator .operation__minus {
+  grid-area: MINUS;
+}
+.calculator .number__one {
+  grid-area: ONE;
+}
+.calculator .number__two {
+  grid-area: TWO;
+}
+.calculator .number__three {
+  grid-area: THREE;
+}
+.calculator .operation__plus {
+  grid-area: PLUS;
+}
+.calculator .operation__divide {
+  grid-area: DIVIDE;
+}
+.calculator .number__zero {
+  grid-area: ZERO;
+  border-radius: none;
+}
+.calculator .number__decimal {
+  grid-area: DECIMAL;
+}
+.calculator .operation__equals {
+  grid-area: EQUALS;
+}
+
+.operation {
+  background-color: orange;
+}
+
+.symbol {
+  background-color: rgb(173, 172, 172);
+}
+
+.number {
+  background-color: rgb(77, 77, 77);
+}/*# sourceMappingURL=styles.css.map */
