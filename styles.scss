@@ -1,4 +1,5 @@
 *{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -9,18 +10,17 @@
 
 
 button{
-  border-radius: 100%;
+  border-radius: 25%;
   font-size: 4rem;
 
 }
-
 
 .calculator {  
     padding:5%;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
     gap: 2rem 2rem;
     grid-auto-flow: row;
@@ -34,9 +34,12 @@ button{
   
   
   .display__container{ 
-    grid-area: DISPLAY; }
+    grid-area: DISPLAY;
+  font-size: 10rem;
+  text-align: right;
+ }
   
-  .symbol__cancel { 
+  .symbol__clear { 
     grid-area: C; }
   
   .symbol__plmi{ 
