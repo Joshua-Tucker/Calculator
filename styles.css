@@ -92,6 +92,10 @@ button {
   background-color: orange;
 }
 
+.operation__equals {
+  background-color: orange;
+}
+
 .symbol {
   background-color: rgb(173, 172, 172);
 }
