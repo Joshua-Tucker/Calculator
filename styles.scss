@@ -8,6 +8,27 @@
     height: 100%;
 }
 
+.active{
+  
+  background-color: #c4d6b0;
+  
+  .operation{
+    background-color:#e2711d
+  }
+  .operation__equals{
+    background-color:#e2711d 
+  }
+  .number{
+    background-color: #477998
+  }
+  .symbol{
+    background-color: #cc5803;
+  }
+  .display__container{
+    background-color: #c4d6b0;
+  }
+  
+} 
 
 button{
   border-radius: 25%;

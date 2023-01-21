@@ -8,6 +8,25 @@
   height: 100%;
 }
 
+.active {
+  background-color: #c4d6b0;
+}
+.active .operation {
+  background-color: #e2711d;
+}
+.active .operation__equals {
+  background-color: #e2711d;
+}
+.active .number {
+  background-color: #477998;
+}
+.active .symbol {
+  background-color: #cc5803;
+}
+.active .display__container {
+  background-color: #c4d6b0;
+}
+
 button {
   border-radius: 25%;
   font-size: 4rem;

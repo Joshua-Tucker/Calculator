@@ -1,12 +1,14 @@
 
 
-const   numbers             = document.querySelectorAll(".number");
-const   currentOperators    = document.querySelectorAll(".operation");
-const   symbols             = document.querySelectorAll(".symbol");
-const   display             = document.querySelector(".display__container");
-const   clear               = document.querySelector(".symbol__clear");
-const   backSpace           = document.querySelector(".symbol__backspace")
-const   equals              = document.querySelector(".operation__equals")
+const   numbers           = document.querySelectorAll(".number");
+const   currentOperators  = document.querySelectorAll(".operation");
+const   symbols           = document.querySelectorAll(".symbol");
+const   display           = document.querySelector(".display__container");
+const   clear             = document.querySelector(".symbol__clear");
+const   backSpace         = document.querySelector(".symbol__backspace")
+const   equals            = document.querySelector(".operation__equals")
+const   brightness        = document.querySelector(".darkMode")   
+const   calculator        = document.querySelector(".calculator")            
 let     firstNumber;
 let     secondNumber;
 let     currentOperator ;
@@ -55,6 +57,12 @@ const handleEquals = () => {
     
 }
 
+const handleBrightness = () => {
+  calculator.classList.toggle("active")
+}
+
+
+
 numbers.forEach((number) => {
   number.addEventListener("click", handleClick);
 });
@@ -67,4 +75,4 @@ currentOperators.forEach((method) => {
 equals.addEventListener("click",handleEquals);
 clear.addEventListener("click", handleClear);
 backSpace.addEventListener("click",handleBackSpace);
-
+brightness.addEventListener("click", handleBrightness)
