@@ -4,8 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   background-color: black;
-  color: white;
-  height: 100%;
 }
 
 .active {
@@ -21,7 +19,7 @@
   background-color: #477998;
 }
 .active .symbol {
-  background-color: #cc5803;
+  background-color: #933d00;
 }
 .active .display__container {
   background-color: #c4d6b0;
@@ -32,27 +30,39 @@ button {
   font-size: 4rem;
 }
 
+body {
+  height: 100%;
+}
+
 .calculator {
+  height: 100%;
   padding: 5%;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 2rem 2rem;
   grid-auto-flow: row;
-  grid-template-areas: "DISPLAY DISPLAY DISPLAY DISPLAY" "C PLUSMINUS PERCENTAGE DIVIDE" "SEVEN EIGHT NINE TIMES" "FOUR FIVE SIX MINUS" "ONE TWO THREE PLUS" "ZERO ZERO DECIMAL EQUALS";
+  grid-template-areas: "DISPLAY DISPLAY DISPLAY DISPLAY" "C BACKSPACE PERCENTAGE DIVIDE" "SEVEN EIGHT NINE TIMES" "FOUR FIVE SIX MINUS" "ONE TWO THREE PLUS" "ZERO ZERO DECIMAL EQUALS" "LIGHT LIGHT LIGHT LIGHT";
 }
 .calculator .display__container {
-  grid-area: DISPLAY;
-  font-size: 10rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
   text-align: right;
+  margin: auto;
+  height: 100%;
+  overflow-wrap: anywhere;
+  font-size: 3rem;
+  grid-area: DISPLAY;
+  width: 100%;
 }
 .calculator .symbol__clear {
   grid-area: C;
 }
-.calculator .symbol__plmi {
-  grid-area: PLUSMINUS;
+.calculator .symbol__backspace {
+  grid-area: BACKSPACE;
 }
 .calculator .symbol__percentage {
   grid-area: PERCENTAGE;
@@ -121,4 +131,23 @@ button {
 
 .number {
   background-color: rgb(77, 77, 77);
+}
+
+.darkMode {
+  grid-area: LIGHT;
+  background-color: #c4d6b0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: rgb(96, 168, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .calculator {
+    height: 100%;
+    width: 60%;
+  }
 }/*# sourceMappingURL=styles.css.map */

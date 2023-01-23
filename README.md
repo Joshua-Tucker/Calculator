@@ -59,6 +59,13 @@ How to write it so its not limited to num1 + num2 = x and can include multiple n
 Why do we put event in sometimes? why do we leave it blank? what are we saying to the function in the ()?
 
 
+if then setting 768 and 1440, if i put a fixed percentage height and width why does the rest of whats internal not stay within that?
+
+-toFixed thought for a soloution so display block wouldnt blow out,
+made a function and tried to change it but it wouldnt work, why is that and what are the alternatives?
+-not understanding active classs and how to use js to change buttons and text
+
+
 
 
 NOTES 
@@ -109,13 +116,17 @@ I wont learn until i start doing it myself and making those internal connections
 OBSERVATIONS
 
 THINGS TO DO
--go over breif
--go over code
--get the last 2 symbols working
--ensure its responsive
--ensure text stays in display box and doesnt change overall design
+-go over breif TICK
+-go over code TICK 
+-get the last 2 symbols working TICK 
+-ensure its responsive TICK
+-ensure text stays in display box and doesnt change overall design TICK
 -Highlight operator to clarify youve pressed on them
+-dark mode TICK
 -change scss so it looks slick
 -refector work if i can
+-2 decimal places if statements to remove
 
 SUMMARY
+
+Presentation highs and lows and what functions to get over what problems
