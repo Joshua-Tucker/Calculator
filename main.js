@@ -7,14 +7,14 @@ const backSpace = document.querySelector(".symbol__backspace");
 const equals = document.querySelector(".operation__equals");
 const brightness = document.querySelector(".darkMode");
 const calculator = document.querySelector(".calculator");
+
 let firstNumber;
 let secondNumber;
 let currentOperator;
+
 let isLight = true;
 
-const limitDisplay = () => {
-  display.innerHTML = display.innerHTML.toFixed(4);
-};
+//Functions
 
 const handleClick = (event) => {
   display.innerHTML += event.target.innerHTML;
@@ -25,7 +25,7 @@ const handleClear = () => {
   console.log(clear.innerHTML);
 };
 
-const handleBackSpace = (event) => {
+const handleBackSpace = () => {
   display.innerHTML = display.innerHTML.slice(0, -1);
   console.log(backSpace.innerHTML);
 };
@@ -35,7 +35,6 @@ const handlecurrentOperators = (event) => {
   currentOperator = event.target.innerHTML;
   display.innerHTML += event.target.innerHTML;
   console.log(currentOperator);
-  //event.target.style.backgroundColor="red" .active class
 };
 
 const calculate = (firstNumber, secondNumber, currentOperator) => {
@@ -63,9 +62,7 @@ const handleEquals = () => {
 const handleBrightness = () => {
   isLight = !isLight;
   isLight ? (brightness.innerText = "🌞") : (brightness.innerText = "🌚");
-  isLight
-    ? (brightness.style.backgroundColor = "#c4d6b0")
-    : (brightness.style.backgroundColor = "black");
+  isLight ? (brightness.style.backgroundColor = "#c4d6b0"): (brightness.style.backgroundColor = "rgb(77, 77, 77");
   calculator.classList.toggle("active");
 };
 

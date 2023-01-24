@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 * {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "VT323", monospace;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,7 +27,7 @@
 }
 
 button {
-  border-radius: 25%;
+  border-radius: 15%;
   font-size: 4rem;
 }
 
@@ -46,17 +47,17 @@ body {
   grid-template-areas: "DISPLAY DISPLAY DISPLAY DISPLAY" "C BACKSPACE PERCENTAGE DIVIDE" "SEVEN EIGHT NINE TIMES" "FOUR FIVE SIX MINUS" "ONE TWO THREE PLUS" "ZERO ZERO DECIMAL EQUALS" "LIGHT LIGHT LIGHT LIGHT";
 }
 .calculator .display__container {
+  grid-area: DISPLAY;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   text-align: right;
   margin: auto;
-  height: 100%;
-  overflow-wrap: anywhere;
   font-size: 3rem;
-  grid-area: DISPLAY;
+  height: 100%;
   width: 100%;
+  overflow-wrap: anywhere;
 }
 .calculator .symbol__clear {
   grid-area: C;
@@ -66,6 +67,9 @@ body {
 }
 .calculator .symbol__percentage {
   grid-area: PERCENTAGE;
+}
+.calculator .operation__divide {
+  grid-area: DIVIDE;
 }
 .calculator .number__seven {
   grid-area: SEVEN;
@@ -103,9 +107,6 @@ body {
 .calculator .operation__plus {
   grid-area: PLUS;
 }
-.calculator .operation__divide {
-  grid-area: DIVIDE;
-}
 .calculator .number__zero {
   grid-area: ZERO;
   border-radius: none;
@@ -139,6 +140,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .display__container {
+    font-size: 4rem !important;
+  }
   body {
     background-color: rgb(96, 168, 240);
     display: flex;
@@ -147,7 +151,6 @@ body {
     height: 100vh;
   }
   .calculator {
-    height: 100%;
     width: 60%;
   }
 }/*# sourceMappingURL=styles.css.map */

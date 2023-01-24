@@ -1,8 +1,5 @@
 # Calculator
 
-# Calculator
-
-Okay project 2
 
 BREIF
 A deployed website (using GitHub Pages)
@@ -29,9 +26,6 @@ PLAN
 I'm getting marked on my integration of all 3 languages now, no point in making it look super fancy and spend loads of time on that if it doesn't work.
 
 
-
-
-
 TIME AVAILABLE
 
 WED PM
@@ -48,9 +42,6 @@ TUES PM
     If happy with functionality spice up the css
 
 **HAND IN TUESDAY 4PM**
-
-
-
 
 
 QUESTIONS
@@ -115,18 +106,19 @@ I wont learn until i start doing it myself and making those internal connections
 
 OBSERVATIONS
 
+  //event.target.style.backgroundColor="red" .active class
+
+
 THINGS TO DO
 -go over breif TICK
 -go over code TICK 
 -get the last 2 symbols working TICK 
 -ensure its responsive TICK
 -ensure text stays in display box and doesnt change overall design TICK
--Highlight operator to clarify youve pressed on them
 -dark mode TICK
--change scss so it looks slick
--refector work if i can
--2 decimal places if statements to remove
+-Highlight operator to clarify youve pressed on them3
+-2 decimal places if statements to remove 1
 
 SUMMARY
 
-Presentation highs and lows and what functions to get over what problems
+Presentation highs and lows and what functions to get over what problems2
