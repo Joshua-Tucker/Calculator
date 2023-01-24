@@ -14,27 +14,19 @@ let currentOperator;
 
 let isLight = true;
 
+
 //Functions
 
-const handleClick = (event) => {
-  display.innerHTML += event.target.innerHTML;
-};
+const handleClick = (event) => display.innerHTML += event.target.innerHTML;
 
-const handleClear = () => {
-  display.innerHTML = "";
-  console.log(clear.innerHTML);
-};
+const handleClear = () => display.innerHTML = "";
 
-const handleBackSpace = () => {
-  display.innerHTML = display.innerHTML.slice(0, -1);
-  console.log(backSpace.innerHTML);
-};
+const handleBackSpace = () => display.innerHTML = display.innerHTML.slice(0, -1);
 
 const handlecurrentOperators = (event) => {
   firstNumber = display.innerHTML;
   currentOperator = event.target.innerHTML;
   display.innerHTML += event.target.innerHTML;
-  console.log(currentOperator);
 };
 
 const calculate = (firstNumber, secondNumber, currentOperator) => {
@@ -65,6 +57,9 @@ const handleBrightness = () => {
   isLight ? (brightness.style.backgroundColor = "#c4d6b0"): (brightness.style.backgroundColor = "rgb(77, 77, 77");
   calculator.classList.toggle("active");
 };
+
+
+//Interactivity 
 
 numbers.forEach((number) => {
   number.addEventListener("click", handleClick);
