@@ -44,6 +44,17 @@ TUES PM
 **HAND IN TUESDAY 4PM**
 
 
+THINGS TO DO
+-go over breif TICK
+-go over code TICK 
+-get the last 2 symbols working TICK 
+-ensure its responsive TICK
+-ensure text stays in display box and doesnt change overall design TICK
+-dark mode TICK
+-Highlight operator to clarify youve pressed on them3
+-2 decimal places if statements to remove 1
+
+
 QUESTIONS
 How to create function to do mathematical process of the button its presssing
 How to write it so its not limited to num1 + num2 = x and can include multiple numbers and multiple operators
@@ -56,10 +67,16 @@ if then setting 768 and 1440, if i put a fixed percentage height and width why d
 made a function and tried to change it but it wouldnt work, why is that and what are the alternatives?
 -not understanding active classs and how to use js to change buttons and text
 
+SUMMARY
+HIGH- It was satisfying working out the light/dark mode after googling it and actually understanding what was on the page, same when doing the percentage and how I can include that in functions that I already had.
+After a bad end to last week i spent friday afternoon noting my code as if i was explaing it to my parents, i thought it was a bit off the mark but after clarifying with rob it gave me a bit of a confidence boost going into the weekend that i do know more that im telling myself.
+LOW- Didnt have the design nor the tidyness of my code to the level that I wanted it, dissapointed that I'm not able to reach a good standard within the time parameters.
+
+WHAT WILL I DO DIFFERENT- i think my intention this time was good, go raw for css but focus on functionality. At this point its just making sure that i am doing something on the project everyday, to keep up momentum and (because im slow) give me that extra bit to present good work for the deadline
 
 
 
-NOTES 
+NOTES
 
 Okay im going to think out loud with my current understanding of using forEach and how we can use that to interact with the operators. Once i think i have an idea of how to do something (or even if I fall flat) then im going to research online on code to use because im not confident with tthe layout process just yet and i feel like that is where im going to get bugs because i dont know how to use them appropriatley yet.
 
@@ -103,22 +120,3 @@ I wont learn until i start doing it myself and making those internal connections
 // add event listener keep a beady eye on the console to iniate a command when it is called into action. The first 3 are all the same, it says.. FOR EACH.. NUMBER that you CLICK(being the event) youre then going to carry out the handleClick which to save scrolling up is to show in the display box whatever the innerHTML is on the TARGET that youve just clicked (EVENT)
 
 //because there are only one equals and one clear we dont use a foreach, we can simply say, when this button is clicked, carry out this function
-
-OBSERVATIONS
-
-  //event.target.style.backgroundColor="red" .active class
-
-
-THINGS TO DO
--go over breif TICK
--go over code TICK 
--get the last 2 symbols working TICK 
--ensure its responsive TICK
--ensure text stays in display box and doesnt change overall design TICK
--dark mode TICK
--Highlight operator to clarify youve pressed on them3
--2 decimal places if statements to remove 1
-
-SUMMARY
-
-Presentation highs and lows and what functions to get over what problems2
